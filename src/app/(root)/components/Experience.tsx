@@ -33,7 +33,10 @@ const Experience = () => {
   };
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <section
+      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+      id="experience"
+    >
       <FloatingBubbbles />
       <div className="max-w-6xl mx-auto relative z-10">
         <Heading
@@ -67,6 +70,7 @@ const Experience = () => {
                       {exp.title}
                     </CardTitle>
                   </div>
+                  <p className="text-purple-200">{exp.company}</p>
 
                   <div className="flex items-center gap-2 text-gray-300">
                     <Calendar className="w-4 h-4" />

@@ -1,7 +1,8 @@
 "use client";
 
+import { Badge } from "@/components/ui/badge";
 import { CardTitle } from "@/components/ui/card";
-import { aboutData } from "@/utils/data/aboutData";
+import { aboutData, bestPracticesData } from "@/utils/data/aboutData";
 import { personalData } from "@/utils/data/personalData";
 import { motion } from "framer-motion";
 
@@ -15,7 +16,6 @@ const AboutMe = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 "
       >
-        {/* Left Side: About Me Content */}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -34,16 +34,45 @@ const AboutMe = () => {
                 ))}
                 <li>
                   <span>
-                    📍 <span className="font-semibold">Location:</span>{" "}
+                    <span className="font-semibold">Location:</span>{" "}
                     {personalData.address}
                   </span>
                 </li>
               </ul>
+              <div className="mt-6">
+                <p className="mb-3 text-sm uppercase tracking-[0.2em] text-purple-200">
+                  Availability
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {personalData.availability.map((item) => (
+                    <Badge
+                      key={item}
+                      className="bg-purple-500/20 text-purple-100 hover:bg-purple-500/30"
+                    >
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-6">
+                <p className="mb-3 text-sm uppercase tracking-[0.2em] text-purple-200">
+                  Best Practices
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {bestPracticesData.map((item) => (
+                    <Badge
+                      key={item}
+                      className="bg-white/10 text-white hover:bg-white/20"
+                    >
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Right Side: Profile Image */}
         <motion.div
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

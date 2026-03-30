@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metaData } from "@/utils/data/personalData";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -14,21 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Aqib - Full Stack MERN Developer & Problem Solver",
-  description:
-    "Welcome to Muhammad Aqib's portfolio. A passionate Full Stack MERN Developer with expertise in React Native, NestJS, and SaaS application development. Explore projects showcasing problem-solving and innovative solutions.",
-  keywords: [
-    "Muhammad Aqib",
-    "Full Stack Developer",
-    "MERN Developer",
-    "React Native Developer",
-    "NestJS Developer",
-    "Portfolio Website",
-    "JavaScript Developer",
-    "SaaS Application Development",
-    "Problem Solver",
-    "Software Engineer",
-  ],
+  title: metaData.title,
+  description: metaData.description,
+  keywords: metaData.keywords,
 };
 
 export default function RootLayout({

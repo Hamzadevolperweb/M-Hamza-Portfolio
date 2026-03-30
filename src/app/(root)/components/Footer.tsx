@@ -13,8 +13,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center text-white"
         >
-          &copy; {new Date().getFullYear()} Proudly created with ❤️ by Muhammad
-          Aqib.
+          &copy; {new Date().getFullYear()} Muhammad Hamza. All rights reserved.
         </motion.p>
       </div>
     </footer>

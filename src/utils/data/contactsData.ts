@@ -1,27 +1,15 @@
-import {
-  Facebook,
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export const contactsData = {
-  email: "muhammadaqib86@gmail.com",
-  phone: "+923484124477",
-  address: "House #2, Street #3, Kharian, Gujrat",
-  github: "https://github.com/muhammada86",
-  facebook: "https://www.facebook.com/muhammad.aqib.3701",
-  linkedIn: "https://www.linkedin.com/in/muhammad-aqib-333640161/",
-  twitter: "https://twitter.com/#",
-  stackOverflow: "https://stackoverflow.com/users/11119419/muhammad-aqib",
-  devUsername: "muhammadaqib86",
+  email: "mh1729574@gmail.com",
+  phone: "+92 317 955 6106",
+  address: "Pushtoon Ghari, Pabbi, Nowshera, KPK, Pakistan",
+  github: "https://github.com/Hamzadevolperweb",
+  linkedIn: "https://www.linkedin.com/in/m-hamza-dev",
 };
 
 export const whyWorkWithMe =
-  "I'm passionate about creating exceptional digital experiences. With a keen eye for detail and a commitment to excellence, I'll bring your vision to life. Let's collaborate and turn your ideas into reality!";
+  "I build polished, performant web experiences with clean architecture, responsive design, and a strong focus on usability. Whether it's product UI, API integration, or scalable frontend systems, I care about shipping dependable work that feels great to use.";
 
 export const socialLinks = [
   {
@@ -40,15 +28,5 @@ export const socialLinks = [
     icon: Linkedin,
     text: "LinkedIn",
     href: contactsData.linkedIn,
-  },
-  {
-    icon: Facebook,
-    text: "Facebook",
-    href: contactsData.facebook,
-  },
-  {
-    icon: Twitter,
-    text: "Twitter",
-    href: contactsData.twitter,
   },
 ];

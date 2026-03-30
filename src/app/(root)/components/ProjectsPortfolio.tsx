@@ -28,7 +28,10 @@ const ProjectPortfolio = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <section
+      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      id="projects"
+    >
       {/* Animated background grid */}
       <div className="absolute inset-0 overflow-hidden">
         <div

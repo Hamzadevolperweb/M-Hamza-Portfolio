@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { personalData } from "@/utils/data/personalData";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -25,7 +26,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <span className="sr-only">Muhammad Aqib</span>
+              <span className="sr-only">{personalData.name}</span>
               <motion.span
                 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
                 initial={{ opacity: 0, y: -20 }}

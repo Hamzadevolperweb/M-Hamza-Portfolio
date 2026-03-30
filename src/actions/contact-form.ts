@@ -3,7 +3,9 @@
 import { personalData } from "@/utils/data/personalData";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resendApiKey = process.env.RESEND_API_KEY;
+const resend = resendApiKey ? new Resend(resendApiKey) : null;
+const senderEmail = process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
 
 const EmailTemplate = ({
   name,
@@ -152,9 +154,17 @@ export async function submitContactForm(formData: FormData) {
     };
   }
 
+  if (!resendApiKey || !resend) {
+    return {
+      success: false,
+      message:
+        "Contact form is not configured yet. Add RESEND_API_KEY to enable email delivery.",
+    };
+  }
+
   try {
     await resend.emails.send({
-      from: `${personalData.name} <onboarding@resend.dev>`,
+      from: `${personalData.name} <${senderEmail}>`,
       to: personalData.email,
       replyTo: email,
       subject: `New Contact Form Message from ${name}`,
@@ -163,7 +173,7 @@ export async function submitContactForm(formData: FormData) {
 
     // Send an auto-reply to the sender
     await resend.emails.send({
-      from: `${personalData.name} <onboarding@resend.dev>`,
+      from: `${personalData.name} <${senderEmail}>`,
       to: email,
       subject: `Thank you for your message, ${name}!`,
       html: `

@@ -50,7 +50,7 @@ const HeroSection = () => {
       className="relative bg-gradient-to-br from-black via-gray-900 to-purple-700  overflow-hidden"
     >
       <Image
-        src="/hero.svg"
+        src={personalData.heroImage ?? "/hero.svg"}
         alt="Hero"
         width={1572}
         height={795}

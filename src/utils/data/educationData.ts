@@ -4,6 +4,6 @@ export const educationData = [
     degree: "B.Sc. Information Engineering Technology",
     period: "Aug 2022 - 2026",
     institution: "University of Technology",
-    location: "Nowshera, KPK, Pakistan",
+    location: "Nowshera, Pakistan",
   },
 ];

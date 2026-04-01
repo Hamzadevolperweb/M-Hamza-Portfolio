@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Muhammad Hamza",
-  profile: "/avatar.png",
+  profile: "/about-me.jpg",
   designation: "MERN Stack Developer | React.js Expert | Frontend Engineer",
   description:
     "Results-driven MERN Stack Developer with 2+ years of experience crafting high-performance, scalable web applications. Expert in React.js, Node.js architecture, and seamless API integration.",
@@ -12,6 +12,7 @@ export const personalData = {
   linkedIn: "https://www.linkedin.com/in/m-hamza-dev",
   resume: "/muhammad-hamza-resume.pdf",
   availability: ["Full-time", "Contract", "Remote"],
+  heroImage: "/hero-custom.jpg", // change this path to your new hero image
 };
 
 export const metaData = {

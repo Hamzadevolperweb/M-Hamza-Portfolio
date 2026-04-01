@@ -1,13 +1,13 @@
 export const personalData = {
   name: "Muhammad Hamza",
-  profile: "/about-me.jpg",
+  profile: "/hamza.jpg",
   designation: "MERN Stack Developer | React.js Expert | Frontend Engineer",
   description:
     "Results-driven MERN Stack Developer with 2+ years of experience crafting high-performance, scalable web applications. Expert in React.js, Node.js architecture, and seamless API integration.",
   experience: 2,
   email: "mh1729574@gmail.com",
   phone: "+92 317 955 6106",
-  address: "Pushtoon Ghari, Pabbi, Nowshera, KPK, Pakistan",
+  address: "Nowshera, Pakistan",
   github: "https://github.com/Hamzadevolperweb",
   linkedIn: "https://www.linkedin.com/in/m-hamza-dev",
   resume: "/muhammad-hamza-resume.pdf",

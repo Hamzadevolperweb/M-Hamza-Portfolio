@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 export const contactsData = {
   email: "mh1729574@gmail.com",
   phone: "+92 317 955 6106",
-  address: "Pushtoon Ghari, Pabbi, Nowshera, KPK, Pakistan",
+  address: "Nowshera, Pakistan",
   github: "https://github.com/Hamzadevolperweb",
   linkedIn: "https://www.linkedin.com/in/m-hamza-dev",
 };
